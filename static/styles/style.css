@@ -1,7 +1,4 @@
-/* * {
-    margin: 0;
-    padding: 0;
-} */
+/* Всякое */
 
 .color1 {
     background-color: rgba(153, 240, 211, 0.39);
@@ -31,28 +28,72 @@
     background-color: rgba(255, 255, 255, 0.537);
 }
 
+/* Конец всякого */
+
+
+
+
+
+
+/* Общее */
+
+body {    
+    border-width: 0px;
+    margin: 0;
+    padding: 0%;
+}
+
+.all {
+    padding: 10px;
+    margin: 0px;
+    background-color: #f6f6f6;
+}
+
+/* Конец общего */
+
+
+
+/* Основной контент */
+
+.main-block {
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 0.5px;
+    border-top: 0px;
+    padding: 10px;
+}
+
+/* Конец основного контента */
+
+
+
+/* Основной контент / Список */
+
 .list-conteiner {
     display: inline-block;
     border-style: solid;
     border-width: 0.5px;
     background-color: #f6f6f6;
     padding-right: 20px;
-    
 }
 
 .list-conteiner>p {
     text-align: center;
     font-weight: bold;
 } 
-.main-block {
-    background-color: rgb(255, 255, 255);
-    border-style: solid;
-    border-width: 0.5px;
-    padding: 10px;
-}
+
+/* Конец списка в основном */
+
+
+
+/* Боковая панель */
+
 .img-conteiner {
     padding: 5px;
+    /* расположение */
     float: right;
+
+
     border-style: solid;
     border-width: 0.5px;
     background-color: #f6f6f6;
@@ -61,19 +102,19 @@
     
 }
 
-.h2-1 {
-    text-align: center;
-    background-color: #bed5fe;
-    margin: 10px;
-    font-size: 100%;
-
-}
 .img-conteiner>div {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     /* Свойство для центрования флекс контейнеров в столбце */
+}
+
+.h2-1 {
+    text-align: center;
+    background-color: #bed5fe;
+    margin: 10px;
+    font-size: 100%;
 
 }
 
@@ -84,20 +125,76 @@
     
 }
 
-.all {
-    padding: 10px;
-    margin: 0px;
-    background-color: #f6f6f6;
-}
-body {    
-    border-width: 0px;
-    margin: 0;
-    padding: 0%;
-}
-
-.right-panel-text {
-    
-}
 .right-panel-text>p {
     width: 250px;
+}
+
+/* Конец боковой панели */
+
+
+
+/* Верхняя панель навигации */
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 0.5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+    padding-bottom: 0px;
+
+    background-color: rgb(185, 220, 255);
+    
+}
+
+.navigation-bar>nav>ul {
+    display: flex;
+    list-style: none;
+    height: 25px;
+    align-items: center;
+
+    padding: 0%;
+    margin: 0px;
+    padding-top: 5px;
+
+    border-style: solid;
+    border-width: 0.3px;
+    border-top: 0px;   
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.navigation-bar>nav>ul>li {
+    display: block;
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 25px;
+    margin-top: 0px;
+
+    border-style: solid;
+    border-width: 0.3px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.navigation-bar>nav>ul>li>input {
+    margin: 0px;
+    
+}
+
+/* Конец верхней панели навигации */
+
+
+
+/* Медиа. Стили по разрешению */
+
+@media (max-width: 900px) {
+    .navigation-bar {
+        flex-direction: column;
+    }
 }
